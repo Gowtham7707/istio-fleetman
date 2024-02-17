@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-17T10:17:45.977Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="tTgy7U8QXLi4GshFO_40" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-17T10:21:39.513Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="5IfYQI_8mdd656ysz6tz" version="23.1.5" type="github">
   <diagram name="Page-1" id="jCPSM0DOkxRQojgGk1aC">
     <mxGraphModel dx="1235" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -24,8 +24,10 @@
         <mxCell id="IgsojkHXUBJstJsHM53G-6" value="Ingress Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="120" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="IgsojkHXUBJstJsHM53G-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IgsojkHXUBJstJsHM53G-11" target="IgsojkHXUBJstJsHM53G-13">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="IgsojkHXUBJstJsHM53G-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IgsojkHXUBJstJsHM53G-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="285" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="IgsojkHXUBJstJsHM53G-11" value="Virtual Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="340" y="190" width="120" height="60" as="geometry" />
@@ -51,8 +53,26 @@
         <mxCell id="IgsojkHXUBJstJsHM53G-20" value="sidecar/proxy container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="445" y="410" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IgsojkHXUBJstJsHM53G-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.385;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IgsojkHXUBJstJsHM53G-11" target="IgsojkHXUBJstJsHM53G-12">
+        <mxCell id="IgsojkHXUBJstJsHM53G-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.438;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IgsojkHXUBJstJsHM53G-11" target="IgsojkHXUBJstJsHM53G-33">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IgsojkHXUBJstJsHM53G-33" value="Kubernetes Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="270" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IgsojkHXUBJstJsHM53G-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.419;entryY=-0.024;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IgsojkHXUBJstJsHM53G-33" target="IgsojkHXUBJstJsHM53G-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IgsojkHXUBJstJsHM53G-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IgsojkHXUBJstJsHM53G-11" target="IgsojkHXUBJstJsHM53G-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="220" as="sourcePoint" />
+            <mxPoint x="505" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IgsojkHXUBJstJsHM53G-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IgsojkHXUBJstJsHM53G-35" target="IgsojkHXUBJstJsHM53G-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IgsojkHXUBJstJsHM53G-35" value="Kubernetes Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="270" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
